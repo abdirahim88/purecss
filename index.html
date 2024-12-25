@@ -10,7 +10,10 @@
    <link rel="stylesheet" href="reset.css">
   <title>Frontend Mentor | QR code component</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+    main {
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -19,7 +22,7 @@
       font-family: Outfit, sans-serif;
     }
     .card {
-      width: 320px;
+      max-width: 320px;
       background-color: #ffffff;
       padding-top: 16px;
       padding-bottom: 40px;
@@ -37,8 +40,6 @@
     }
 
     .cardimg {
-      width: 100%;
-      height: 288px;
       border-radius: 10px;
     }
 
@@ -75,14 +76,16 @@
   </style>
 </head>
 <body>
+  <main>
+    <div class="card">
+      <img class="cardimg" src="./images/image-qr-code.png" alt="qr">
+      <div class="text">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div> <! -- end of card -->
+  </main>
 
-  <div class="card">
-    <img class="cardimg" src="./images/image-qr-code.png" alt="qr">
-    <div class="text">
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
-  </div> <! -- end of card -->
   
 
   
